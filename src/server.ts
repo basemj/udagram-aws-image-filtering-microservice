@@ -46,7 +46,7 @@ import { filterImageFromURL, deleteLocalFiles } from "./util/util";
           deleteLocalFiles([filteredImage]);
         });
       })
-      .catch(() => res.status(500).send("make sure the image url is correct"));
+      .catch(() => res.status(422).send("make sure the image url is correct"));
   });
 
   //! END @TODO1
